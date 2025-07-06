@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123456"
+    }
+  ],
+  "vehicle": [
+    {
+      "id": 1,
+      "modelo": "Ford Mustang",
+      "imagem": "https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_960_720.jpg",
+      "vendas": 1530,
+      "conectados": 1020,
+      "atualizados": 880
+    },
+    {
+      "id": 2,
+      "modelo": "Ford F-150",
+      "imagem": "https://cdn.pixabay.com/photo/2016/05/05/16/25/ford-1373720_960_720.jpg",
+      "vendas": 2100,
+      "conectados": 1950,
+      "atualizados": 1820
+    },
+    {
+      "id": 3,
+      "modelo": "Ford EcoSport",
+      "imagem": "https://cdn.pixabay.com/photo/2018/03/03/19/04/auto-3198102_960_720.jpg",
+      "vendas": 980,
+      "conectados": 720,
+      "atualizados": 600
+    }
+  ],
+  "vehicleData": [
+    {
+      "id": "2FRHDUYS2Y63NHD22454",
+      "modelo": "Ford Mustang",
+      "ano": 2021,
+      "status": "ativo",
+      "localizacao": "São Paulo - SP",
+      "versao": "v2.3.1"
+    },
+    {
+      "id": "4FAJHSJ23J5H8AHS82131",
+      "modelo": "Ford F-150",
+      "ano": 2022,
+      "status": "manutenção",
+      "localizacao": "Curitiba - PR",
+      "versao": "v2.3.4"
+    },
+    {
+      "id": "5HJS8A7DJ23JADHA72621",
+      "modelo": "Ford EcoSport",
+      "ano": 2020,
+      "status": "ativo",
+      "localizacao": "Salvador - BA",
+      "versao": "v2.2.9"
+    }
+  ]
+}
