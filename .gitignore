@@ -1,0 +1,43 @@
+# =====================
+# Node.js - para as APIs
+# =====================
+**/node_modules/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/.env
+
+# =====================
+# Angular
+# =====================
+/ford-dashboard/node_modules/
+/ford-dashboard/dist/
+/ford-dashboard/out-tsc/
+/ford-dashboard/coverage/
+/ford-dashboard/.angular/cache/
+/ford-dashboard/*.log
+
+# =====================
+# Arquivos de sistema e editores
+# =====================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.vs/
+
+# =====================
+# Sistema operacional
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Logs gerais
+# =====================
+*.log
+
+# =====================
+# NÃO IGNORAR: pasta de imagens PNG (não coloque nada aqui para não ignorar)
+# =====================
