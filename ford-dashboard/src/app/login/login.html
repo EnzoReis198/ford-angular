@@ -1,0 +1,58 @@
+<div class="tela-login">
+  <div class="lado-esquerdo">
+    <img src="assets/img/ranger.png" alt="Carro Ford" class="carro">
+  </div>
+
+  <div class="lado-direito">
+    <img src="assets/img/ford.png" alt="Logo Ford" class="logo">
+    <p class="boas-vindas">Boas-vindas</p>
+
+    <div class="caixa-login">
+      <!-- Campo E-mail -->
+      <div class="campo">
+        <i class="fas fa-user icone"></i>
+        <input
+          type="email"
+          class="entrada"
+          placeholder="Insira seu e-mail"
+          [(ngModel)]="email"
+        >
+      </div>
+
+      <!-- Campo Senha -->
+      <div class="campo">
+        <i class="fas fa-lock icone"></i>
+        <input
+          [type]="mostrarSenha ? 'text' : 'password'"
+          class="entrada"
+          placeholder="Insira sua senha"
+          [(ngModel)]="senha"
+        >
+        <i
+          class="fas icone-direita"
+          [class.fa-eye]="!mostrarSenha"
+          [class.fa-eye-slash]="mostrarSenha"
+          (click)="toggleMostrarSenha()"
+        ></i>
+      </div>
+
+      <!-- Switch -->
+      <div class="linha-switch">
+        <span>Logar automaticamente</span>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="autoLogin">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- Botão Entrar -->
+      <button class="botao" (click)="fazerLogin()" [disabled]="carregando">
+        {{ carregando ? 'Entrando...' : 'ENTRAR' }}
+      </button>
+
+      <div *ngIf="mensagem" style="margin-top: 10px; color: red;">
+        {{ mensagem }}
+      </div>
+    </div>
+  </div>
+</div>

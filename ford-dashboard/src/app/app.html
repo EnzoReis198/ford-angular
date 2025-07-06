@@ -1,0 +1,6 @@
+<router-outlet></router-outlet>
+<script>
+  // Redireciona para a página de login se o usuário não estiver autenticado
+  if (!localStorage.getItem('token')) {
+    window.location.href = '/login';
+  }

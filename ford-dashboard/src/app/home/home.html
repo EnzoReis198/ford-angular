@@ -1,0 +1,31 @@
+<!-- Overlay verde escuro -->
+<div class="overlay" [class.active]="isSidebarOpen" (click)="toggleSidebar()"></div>
+
+<!-- Botão do menu hambúrguer -->
+<div class="menu-toggle" [class.open]="isSidebarOpen" (click)="toggleSidebar()">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar" [class.active]="isSidebarOpen">
+  <img src="assets/img/ford.png" alt="Logo Ford" class="logo"/>
+<a routerLink="/home" class="menu-item">HOME</a>
+<a routerLink="/dashboard" (click)="toggleSidebar()">Ir para Dashboard</a>
+</div>
+
+<!-- Conteúdo principal -->
+<div class="main-content">
+  <div class="popup-box">
+    <div class="caixa-titulo">
+      <p class="titulo">Sistema de dados FORD</p>
+    </div>
+
+    <hr />
+
+    <div class="caixa-mensagem">
+      <p class="mensagem">Seja Bem vindo(a)!</p>
+    </div>
+  </div>
+</div>

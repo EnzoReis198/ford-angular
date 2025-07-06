@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* Remove scroll */
+  font-family: Arial, sans-serif;
+}
+
+.tela-login {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.lado-esquerdo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carro {
+  max-width: 90%;
+  max-height: 90vh; /* Limita altura do carro */
+  height: auto;
+}
+
+.lado-direito {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.logo {
+  width: 250px;
+  max-height: 150px;
+  margin-bottom: 20px;
+}
+
+.boas-vindas {
+    color: #28a745;
+    font-size: 26px;
+    margin-top: 7rem;
+}
+
+.caixa-login {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 45px;
+}
+
+.campo {
+  position: relative;
+}
+
+.campo .icone {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+.campo .icone-direita {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  cursor: pointer;
+}
+
+.entrada {
+  width: 100%;
+  padding: 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.linha-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #333;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px; width: 14px;
+  left: 3px; bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #28a745;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.botao {
+  background: #ccc;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.botao:hover {
+  background: #bbb;
+}
