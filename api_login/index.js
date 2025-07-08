@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const USUARIO_FIXO = {
-  email: 'usuario@ford.com',
+  email: 'admin',
   senha: bcrypt.hashSync('123456', 8), // senha criptografada
   nome: 'Usuário Ford'
 };
